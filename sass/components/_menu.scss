@@ -1,0 +1,40 @@
+.menu {
+  display: flex;
+}
+
+.menu--ml {
+  margin-left: 93px;
+}
+.menu__item--ml {
+  margin-left: 50px;
+}
+
+.menu__item--position {
+  position: relative;
+}
+
+.menu__link {
+  display: block;
+  padding: 32px 0;
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  transition: color $animation;
+  &:hover,
+  &:focus {
+    color: $active-color;
+  }
+}
+.menu__link--color {
+  color: $active-color;
+}
+.menu__link--position::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: "";
+  width: 100%;
+  border: 2px solid $active-color;
+  border-radius: 2px;
+}

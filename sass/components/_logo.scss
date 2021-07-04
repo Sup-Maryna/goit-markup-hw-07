@@ -1,0 +1,20 @@
+.logo {
+  display: inline-block;
+  font-family: $accent-font;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.174;
+  color: $black-color;
+  &--padding {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  &--mb-color {
+    margin-bottom: 20px;
+    color: $white-color;
+  }
+}
+
+.logo__text {
+  color: $active-color;
+}

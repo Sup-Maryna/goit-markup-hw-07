@@ -1,0 +1,35 @@
+.feature {
+  padding: 94px 0;
+}
+.feature__list {
+  display: flex;
+}
+
+.feature__list .feature__item + .feature__item {
+  margin-left: $size-gap;
+}
+
+.feature__item {
+  width: 270px;
+}
+
+.feature__svg {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  margin-bottom: 30px;
+  background: $bg-svg;
+  border-radius: 4px;
+}
+
+.feature__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.143;
+  text-transform: uppercase;
+}
+
+.feature__paragraph {
+  line-height: 1.714;
+  color: $grey-color;
+}
