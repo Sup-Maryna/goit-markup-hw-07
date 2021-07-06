@@ -1,8 +1,9 @@
 .contacts {
   display: flex;
-  &--ml {
-    margin-left: auto;
-  }
+}
+
+.contacts--ml {
+  margin-left: auto;
 }
 
 .contacts__item--ml {

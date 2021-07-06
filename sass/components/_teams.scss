@@ -9,12 +9,9 @@
   margin-left: calc(-1 * #{$size-gap});
 }
 
-.teams__list > .teams__item {
-  flex-basis: calc(100% / 4 - #{$size-gap});
-  margin-left: $size-gap;
-}
-
 .teams__item {
+  margin-left: $size-gap;
+  flex-basis: calc(100% / 4 - #{$size-gap});
   background: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -23,10 +20,7 @@
 
 .teams__title {
   margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
-  text-align: center;
+  @extend %title;
 }
 
 .teams__content-block {

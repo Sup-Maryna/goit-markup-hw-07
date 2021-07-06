@@ -5,22 +5,18 @@
 
 .activity__title {
   margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
-  text-align: center;
+  @extend %title;
 }
 
 .activity__list {
   display: flex;
 }
 
-.activity__list .activity__item + .activity__item {
-  margin-left: $size-gap;
-}
-
 .activity__item {
   position: relative;
+  .activity__list & + & {
+    margin-left: $size-gap;
+  }
 }
 
 .activity__title-2 {

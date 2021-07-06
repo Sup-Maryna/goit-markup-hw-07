@@ -33,7 +33,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--white-color);
+  background: $white-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: border-color $animation, color $animation;
@@ -44,7 +44,7 @@
   }
 }
 
-.button-close-svg {
+.button-close__svg {
   width: 11px;
   height: 11px;
   fill: currentColor;
@@ -64,16 +64,15 @@
   letter-spacing: 0.03em;
 }
 
-.modal__form-label.modal__form-label--mb {
-  margin-bottom: 20px;
-}
-
 .modal__form-label {
   margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
-  color: var(--grey-color);
+  color: $grey-color;
+  &.modal__form-label--mb {
+    margin-bottom: 20px;
+  }
 }
 
 .modal__form-wrap {
@@ -90,10 +89,9 @@
   border-radius: 4px;
   cursor: pointer;
   transition: border $animation;
-}
-
-.modal__form-input:focus {
-  border: 1px solid $active-color;
+  &:focus {
+    border: 1px solid $active-color;
+  }
 }
 
 .modal__form-icon {
@@ -105,10 +103,9 @@
   align-items: center;
   transform: translateY(-50%);
   transition: fill $animation;
-}
-
-.modal__form-input:focus + .modal__form-icon {
-  fill: $active-color;
+  .modal__form-input:focus + & {
+    fill: $active-color;
+  }
 }
 
 .modal__form-textarea {
@@ -122,17 +119,15 @@
   outline: none;
   cursor: pointer;
   transition: border-color $animation;
-}
-
-.modal__form-textarea:focus {
-  border-color: $active-color;
-}
-
-.modal__form-textarea::placeholder {
-  font-size: 12px;
-  line-height: 1.166;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &:focus {
+    border-color: $active-color;
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .modal__form-checkbox {
@@ -154,18 +149,17 @@
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--main-text-color);
+  border: 2px solid $main-text-color;
   border-radius: 4px;
   vertical-align: middle;
-  fill: var(--white-color);
+  fill: $white-color;
   transition: border-color $animation;
-}
-
-.modal__form-checkinput:checked + * .modal__form-checkicon {
-  background-color: $active-color;
-  background-size: contain;
-  background-origin: border-box;
-  border-color: $active-color;
+  .modal__form-checkinput:checked + * & {
+    background-color: $active-color;
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $active-color;
+  }
 }
 
 .modal__form-checkinput:focus,
@@ -174,17 +168,6 @@
   background-size: contain;
   background-origin: border-box;
   border-color: $active-color;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
 }
 
 .modal__form-link {

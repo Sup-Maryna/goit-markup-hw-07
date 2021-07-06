@@ -5,12 +5,11 @@
   display: flex;
 }
 
-.feature__list .feature__item + .feature__item {
-  margin-left: $size-gap;
-}
-
 .feature__item {
   width: 270px;
+  .feature__list & + & {
+    margin-left: $size-gap;
+  }
 }
 
 .feature__svg {
@@ -22,7 +21,7 @@
   border-radius: 4px;
 }
 
-.feature__title {
+.feature__title-2 {
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.143;

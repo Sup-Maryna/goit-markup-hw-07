@@ -1,8 +1,10 @@
 @import "./base/normalize";
 @import "./utils/variables";
-@import "./components/body";
-@import "./components/container";
-@import "./components/img";
+@import "./base/body";
+@import "./base/container";
+@import "./base/img";
+@import "./utils/visually-hidden";
+@import "./utils/placeholder";
 @import "./components/button";
 @import "./components/header";
 @import "./components/logo";
@@ -16,3 +18,4 @@
 @import "./components/clients";
 @import "./components/footer";
 @import "./components/modal";
+@import "./components/portfolio";
