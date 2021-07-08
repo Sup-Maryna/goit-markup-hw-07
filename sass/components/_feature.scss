@@ -1,13 +1,10 @@
 .feature {
-  padding: 94px 0;
-}
-.feature__list {
   display: flex;
 }
 
 .feature__item {
   width: 270px;
-  .feature__list & + & {
+  .feature & + & {
     margin-left: $size-gap;
   }
 }
@@ -21,7 +18,7 @@
   border-radius: 4px;
 }
 
-.feature__title-2 {
+.feature__title {
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.143;

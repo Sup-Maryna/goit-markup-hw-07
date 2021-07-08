@@ -2,15 +2,15 @@
   display: flex;
 }
 
-.menu--ml {
+.menu--margin {
   margin-left: 93px;
 }
-.menu__item--ml {
-  margin-left: 50px;
-}
 
-.menu__item--position {
+.menu__item {
   position: relative;
+  .menu & + & {
+    margin-left: 50px;
+  }
 }
 
 .menu__link {

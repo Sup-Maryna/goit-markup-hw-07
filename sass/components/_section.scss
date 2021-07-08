@@ -1,0 +1,13 @@
+.section {
+  padding: 94px 0;
+}
+.section--nopaddingtop {
+  padding-top: 0;
+}
+.section--color {
+  background-color: #f5f4fa;
+}
+.section__title {
+  margin-bottom: 50px;
+  @extend %title;
+}

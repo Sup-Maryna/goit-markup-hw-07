@@ -1,9 +1,6 @@
 @import "./base/normalize";
 @import "./utils/variables";
-@import "./base/body";
-@import "./base/container";
-@import "./base/img";
-@import "./utils/visually-hidden";
+@import "./base/common";
 @import "./utils/placeholder";
 @import "./components/button";
 @import "./components/header";
@@ -11,6 +8,7 @@
 @import "./components/menu";
 @import "./components/contacts";
 @import "./components/hero";
+@import "./components/section";
 @import "./components/feature";
 @import "./components/activity";
 @import "./components/teams";

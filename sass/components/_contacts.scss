@@ -2,11 +2,11 @@
   display: flex;
 }
 
-.contacts--ml {
+.contacts--margin {
   margin-left: auto;
 }
 
-.contacts__item--ml {
+.contacts .contacts__item + .contacts__item {
   margin-left: $size-gap;
 }
 

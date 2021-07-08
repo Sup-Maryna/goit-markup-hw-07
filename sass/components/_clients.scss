@@ -1,12 +1,4 @@
 .clients {
-  padding: 94px 0;
-}
-.clients__title {
-  margin-bottom: 50px;
-  @extend %title;
-}
-
-.clients__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * #{$size-gap});

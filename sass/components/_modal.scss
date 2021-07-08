@@ -161,13 +161,15 @@
     border-color: $active-color;
   }
 }
-
-.modal__form-checkinput:focus,
-.modal__form-checkinput:hover {
-  background-color: $active-color;
-  background-size: contain;
-  background-origin: border-box;
-  border-color: $active-color;
+.modal__form-checkinput {
+  @extend %visually-hidden;
+  &:focus,
+  &:hover {
+    background-color: $active-color;
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $active-color;
+  }
 }
 
 .modal__form-link {

@@ -1,25 +1,15 @@
 .activity {
-  padding-top: 0;
-  padding-bottom: 94px;
-}
-
-.activity__title {
-  margin-bottom: 50px;
-  @extend %title;
-}
-
-.activity__list {
   display: flex;
 }
 
 .activity__item {
   position: relative;
-  .activity__list & + & {
+  .activity & + & {
     margin-left: $size-gap;
   }
 }
 
-.activity__title-2 {
+.activity__title {
   position: absolute;
   bottom: 0;
   left: 0;
