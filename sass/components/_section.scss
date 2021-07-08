@@ -11,3 +11,7 @@
   margin-bottom: 50px;
   @extend %title;
 }
+
+.section__title--hidden {
+  @extend %visually-hidden;
+}

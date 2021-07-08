@@ -310,7 +310,7 @@ img {
   text-align: center;
 }
 
-.modal__form-checkinput {
+.section__title--hidden, .modal__form-checkinput {
   position: absolute;
   width: 1px;
   height: 1px;
